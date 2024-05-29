@@ -1,7 +1,7 @@
-import loadBalancer from "./7-load_balancer";
+import loadBalancer from "./7-load_balancer"; // eslint-disable-line
 
-const ukSuccess = 'Downloading from UK is faster';
-const frSuccess = 'Downloading from FR is faster';
+const ukSuccess = 'Downloading from UK is faster'; // eslint-disable-line
+const frSuccess = 'Downloading from FR is faster'; // eslint-disable-line
 
 const promiseUK = new Promise(function(resolve, reject) {
     setTimeout(resolve, 100, ukSuccess);
