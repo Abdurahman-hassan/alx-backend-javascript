@@ -5,12 +5,12 @@
  * @returns {string} - The cleaned string with values separated by '-'
  */
 export default function cleanSet(set, startString) {
-    if (startString === '' || startString === undefined
+  if (startString === '' || startString === undefined
         || !(set instanceof Set) || typeof startString !== 'string') { return ''; }
 
-    const filteredValues = Array.from(set)
-        .filter((value) => (value !== undefined ? value.startsWith(startString) : ''))
-        .map((value) => (value !== undefined ? value.slice(startString.length) : ''));
+  const filteredValues = Array.from(set)
+    .filter((value) => (value !== undefined ? value.startsWith(startString) : ''))
+    .map((value) => (value !== undefined ? value.slice(startString.length) : ''));
 
-    return filteredValues.join('-');
+  return filteredValues.join('-');
 }
