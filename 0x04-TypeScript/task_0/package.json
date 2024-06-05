@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start-dev": "./node_modules/.bin/webpack-dev-server --open",
-    "build": "./node_modules/.bin/webpack",
-    "test": "./node_modules/.bin/jest"
+    "start-dev": "webpack-dev-server --open",
+    "build": "webpack",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
